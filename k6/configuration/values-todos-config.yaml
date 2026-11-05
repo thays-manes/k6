@@ -1,0 +1,14 @@
+config:
+  script: ../execution/TODOS/Index.js
+  vus: 5
+  job:
+    env:
+      BASE_URL: "https://jsonplaceholder.typicode.com"
+      RESOURCE_CODE: "todos"
+    resources:
+      limits:
+        cpu: 100m
+        memory: 600Mi
+      requests:
+        cpu: 100m
+        memory: 600Mi
